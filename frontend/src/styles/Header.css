@@ -1,0 +1,15 @@
+.HD_DIV_H1{
+    height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 90, 0);
+}
+.HD_DIV_H1_H1{
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    font-size: 34px;
+    font-weight: 500;
+    color: white;
+}

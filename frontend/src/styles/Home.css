@@ -1,0 +1,51 @@
+.PD_DIV_P{
+    margin: 10px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.PD_DIV_PP{
+    text-align: justify;
+    text-wrap: pretty;
+    word-wrap: break-word;
+    font-size: 13px;
+}
+.LNK_DIV_LINK{
+    height: 20vh;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LNK_DIV_LINK_CLK{
+    background-color: rgb(200, 90, 0);
+    width: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+    .PD_DIV_P{
+        height: 70vh;
+    } 
+    .LNK_DIV_LINK{
+        height: 50vh;
+    }   
+}
+@media screen and (max-width: 375px) {
+    .PD_DIV_P{
+        height: 90vh;
+    } 
+    .LNK_DIV_LINK{
+        height: 50vh;
+    }   
+}

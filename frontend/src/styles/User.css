@@ -1,0 +1,253 @@
+.BTN_FRM_DIV_D{
+    background-color: rgb(244, 190, 146);
+    border: 5px solid rgb(200, 90, 0);
+    border-radius: 10px;
+    margin: 10px;
+}
+.BTN_DIV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.BTN_DIV_D{
+    border: none;
+    outline: none;
+    background: none;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.BTN_P{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(200, 90, 0);
+}
+.IMG_FRM_DIV_SEC{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.FRM_IMG_LBL{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid rgb(200, 90, 0);
+}
+.GEN_TYP_FRM_DIV_SEC{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.GEN_TYP_FRM_DIV_SEC_P{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FRM_LBL{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: justify;
+    margin: 10px;
+}
+.FRM_LBL1{
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.USER_FRM_DIV_GR{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.FRM_DIV_D{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.FRM_IP{
+    border: none;
+    outline: none;
+    width: 97%;
+    height: 30px;
+    font-size: 13px;
+    padding-left: 5px;
+}
+.FRM_IP_DT{
+    width: 97.5%;
+}
+
+.USER_FRM_DIV_TXT{
+    margin: 10px;
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.FRM_TXT{
+    resize: none;
+    outline: none;
+    font-size: 12px;
+    border: none;
+}
+
+.DIV_SBMT_BTND{
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.DIV_SBMT_BTND_SBMT{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid rgb(200, 90, 0);
+    color: rgb(200, 90, 0);
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.SRC_DIV_D{
+    border: 1px solid black;
+    margin: 10px;
+    background-color: rgb(244, 190, 146);
+    border: 5px solid rgb(200, 90, 0);
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 8vh;
+}
+.SRC_IP{
+    border: none;
+    outline: none;
+    background: none;
+    height: 30px;
+    width: 200px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.USER_LIST_DIV_D{
+    background-color: rgb(244, 190, 146);
+    border: 5px solid rgb(200, 90, 0);
+    border-radius: 10px;
+    margin: 10px;
+    overflow: scroll;
+    height: 50vh;
+}
+.USER_LIST_DIV_USER{
+    background-color: white;
+    border: 3px solid rgb(200, 90, 0);
+    border-radius: 10px;
+    height: 8vh;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.USER_LIST_DIV_P{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(200, 90, 0);
+    margin: 10px;
+}
+.VIEW_BTN{
+    border: none;
+    outline: none;
+    background: none;
+    margin: 10px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(200, 90, 0);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px){
+    .FRM_IP{
+        width: 95%;
+    }
+    .FRM_IP_DT{
+        width: 95.5%;
+    }
+}
+@media screen and (max-width: 950px){
+    .GEN_TYP_FRM_DIV_SEC{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .GEN_TYP_FRM_DIV_SEC_P{
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 768px){
+    .USER_FRM_DIV_GR{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 500px){
+    .USER_FRM_DIV_GR{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .FRM_IP{
+        width: 98.5%;
+    }
+    .FRM_IP_DT{
+        width: 99%;
+    }
+}
+@media screen and (max-width: 425px){
+    .SRC_IP{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 550px){
+    .GEN_TYP_FRM_DIV_SEC_P{
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media screen and (max-width: 320px){
+    .DIV_SBMT_BTND{
+        flex-direction: column;
+    }
+}
