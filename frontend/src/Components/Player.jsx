@@ -24,28 +24,28 @@ export const Player = ({ playerData, onClose, onEdit }) => {
         </div>
         <div className="player-modal-content">
           <div>
-            <p>Player Gender: {playerData.playergender}</p>
-            <p>Player Type: {playerData.playertype}</p>
-            <p>Player jerseynumber: {playerData.jerseynumber}</p>
-            <p>Player Rank: {playerData.playerrank}</p>
+            <p><strong>Player Gender:</strong> {playerData.playergender}</p>
+            <p><strong>Player Type:</strong> {playerData.playertype}</p>
+            <p><strong>Player jerseynumber:</strong> {playerData.jerseynumber}</p>
+            <p><strong>Player Rank:</strong> {playerData.playerrank}</p>
           </div>
           <div>
-            <p>Player Position: {playerData.playerposition}</p>
-            <p>Player Birthdate: {playerData.playerbirthdate}</p>
-            <p>Player Address: {playerData.playeraddress}</p>
-            <p>Player Total Matches: {playerData.totalmatches}</p>
+            <p><strong>Player Position:</strong> {playerData.playerposition}</p>
+            <p><strong>Player Birthdate:</strong> {playerData.playerbirthdate}</p>
+            <p><strong>Player Address:</strong> {playerData.playeraddress}</p>
+            <p><strong>Player Total Matches:</strong> {playerData.totalmatches}</p>
           </div>
           <div>
-            <p>Player Total Score: {playerData.totalscore}</p>
-            <p>Player Total Fifties: {playerData.totalfifties}</p>
-            <p>Player Total Centuries: {playerData.totalcenturies}</p>
-            <p>Player Highest Score: {playerData.highestscore}</p>
+            <p><strong>Player Total Score:</strong> {playerData.totalscore}</p>
+            <p><strong>Player Total Fifties:</strong> {playerData.totalfifties}</p>
+            <p><strong>Player Total Centuries:</strong> {playerData.totalcenturies}</p>
+            <p><strong>Player Highest Score:</strong> {playerData.highestscore}</p>
           </div>
           <div>
-            <p>Player Total Wickets: {playerData.totalwickets}</p>
-            <p>Player Highest Wickets: {playerData.highestwickets}</p>
-            <p>Player Average: {playerData.playeraverage}</p>
-            <p>Player Strike Rate: {playerData.playerstrikerate}</p>
+            <p><strong>Player Total Wickets:</strong> {playerData.totalwickets}</p>
+            <p><strong>Player Highest Wickets:</strong> {playerData.highestwickets}</p>
+            <p><strong>Player Average:</strong> {playerData.playeraverage}</p>
+            <p><strong>Player Strike Rate:</strong> {playerData.playerstrikerate}</p>
           </div>
         </div>
         <div className="PLAYER_DETAILS">

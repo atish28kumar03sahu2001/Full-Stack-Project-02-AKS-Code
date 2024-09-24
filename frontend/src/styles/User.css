@@ -255,6 +255,12 @@
     .FRM_IP_DT{
         width: 99%;
     }
+    .SRC_DIV_D{
+        justify-content: space-around;
+    }
+    .VIEW_BTN{
+        width: 80px;
+    }
 }
 @media screen and (max-width: 425px){
     .SRC_IP{
