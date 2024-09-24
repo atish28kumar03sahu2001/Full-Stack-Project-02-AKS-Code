@@ -4,6 +4,7 @@ import { FaUser, FaBookmark} from "react-icons/fa";
 import { IoPersonCircle } from "react-icons/io5";
 import { MdCancel, MdEdit } from "react-icons/md";
 import { GrGallery } from "react-icons/gr";
+import { TbSortDescendingLetters, TbSortAscendingLetters } from "react-icons/tb";
 import '../styles/User.css';
 import { Player } from "./Player";
 import { PostHook } from "../CustomHook/PostHook";
@@ -16,6 +17,7 @@ export const User = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const {data, loading, error, refetch} = GetHook();
     const [editingPlayer, setEditingPlayer] = useState(null);
+    const [sortOrder, setSortOrder] = useState(null);
 
     const debounce = (func, delay) => {
         let timeoutId;
@@ -30,6 +32,10 @@ export const User = () => {
     const handleSearch = debounce((term) => {
         setSearchTerm(term);
     }, 1000);
+
+    const handleSort = (order) => {
+        setSortOrder(order);
+    };
 
     const HandleShowForm = () => setFormVisibility(true);
     const HandleCancelForm = () => setFormVisibility(false);
@@ -79,6 +85,12 @@ export const User = () => {
     const filteredPlayers = data.filter(player => 
         player.playername.toLowerCase().includes(searchTerm.toLowerCase())
     );
+
+    if (sortOrder === "asc") {
+        filteredPlayers.sort((a, b) => a.playername.localeCompare(b.playername));
+    } else if (sortOrder === "desc") {
+        filteredPlayers.sort((a, b) => b.playername.localeCompare(a.playername));
+    }
 
     return (
         <>
@@ -190,6 +202,8 @@ export const User = () => {
                 )}
             </div>
             <div className="SRC_DIV_D">
+                <button className="SRT_BTN" onClick={() => handleSort("asc")}><TbSortAscendingLetters size={20} color="white" /></button>
+                <button className="SRT_BTN" onClick={() => handleSort("desc")}><TbSortDescendingLetters size={20} color="white" /></button>
                 <input className="SRC_IP" type="text" placeholder="Search..." onChange={(e) => handleSearch(e.target.value)} />
             </div>
             <div className="USER_LIST_DIV_D">

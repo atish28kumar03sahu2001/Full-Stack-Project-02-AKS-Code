@@ -161,6 +161,21 @@
     background-color: white;
     margin: 10px;
     border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.SRT_BTN{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: rgb(200, 90, 0);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .USER_LIST_DIV_D{
@@ -222,10 +237,17 @@
     .USER_FRM_DIV_GR{
         grid-template-columns: repeat(2, 1fr);
     }
+    .FRM_DIV_D:last-child{
+        width: 205%;
+    }
 }
 @media screen and (max-width: 500px){
     .USER_FRM_DIV_GR{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .FRM_DIV_D:last-child{
+        border: unset; 
+        width: unset;
     }
     .FRM_IP{
         width: 98.5%;

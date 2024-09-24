@@ -30,11 +30,16 @@ database();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.resolve(__dirname, 'dist')));
 app.use('/uploads', express.static(uploadsDir));
 app.use('/users',PlayerRouter);
 
 app.get("/",(req, res) => {
     res.json({ msg: "Backend Server Connected Successfully!"})
+});
+
+app.use('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
 });
 
 app.listen(process.env.PORT, () => {

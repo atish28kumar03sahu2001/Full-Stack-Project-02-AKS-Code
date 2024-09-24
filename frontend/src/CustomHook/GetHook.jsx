@@ -9,7 +9,7 @@ export const GetHook = () => {
     const fetchData = async () => {
         setLoading(true);
         try {
-            const response = await axios.get("http://localhost:8080/users");
+            const response = await axios.get("https://full-stack-project-02-aks.vercel.app/users");
             setData(response.data);
             setLoading(false);
         } catch (err) {

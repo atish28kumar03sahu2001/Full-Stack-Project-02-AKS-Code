@@ -2,7 +2,7 @@
 import axios from "axios";
 export const PatchHook = async (id, formData) => {
     try {
-        const response = await axios.patch(`http://localhost:8080/users/${id}`,formData,{
+        const response = await axios.patch(`https://full-stack-project-02-aks.vercel.app/users/${id}`,formData,{
             headers:{'Content-Type': 'multipart/form-data',}
         });
         return response.data;
