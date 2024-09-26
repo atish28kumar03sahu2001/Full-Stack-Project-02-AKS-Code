@@ -25,6 +25,6 @@ router
     .post("/",upload,createPlayer)
     .get("/",getPlayers)
     .delete("/:id",deletePlayer)
-    .patch("/:id",upload, patchPlayer);
+    .patch("/:id",upload,patchPlayer);
 
 export const PlayerRouter = router;
